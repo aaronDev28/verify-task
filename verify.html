@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<title>Secure Login Portal</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+
+<body>
+
+ <script>
+  function verify() {
+    checkpass = document.getElementById("passw").value;
+    split = 4;
+    if (checkpass.substring(0, split) == 'xxxx') {
+      if (checkpass.substring(split*6, split*7) == 'm2n2') {
+        if (checkpass.substring(split, split*2) == 'kzyy') {
+         if (checkpass.substring(split*4, split*5) == 'ts_p') {
+          if (checkpass.substring(split*3, split*4) == 'lien') {
+            if (checkpass.substring(split*5, split*6) == 'lz_e') {
+              if (checkpass.substring(split*2, split*3) == 'no_c') {
+                if (checkpass.substring(split*7, split*8) == '4L') {
+                  alert("Password Verified")
+                  }
+                }
+              }
+      
+            }
+          }
+        }
+      }
+    }
+    else {
+      alert("Incorrect password");
+    }
+    
+  }
+</script>
+<div class="login-page">
+	<h1 style="font-size:300%;color: black;font-family: Arial, Helvetica, sans-serif; "> LOGIN </h1>
+
+
+  <div class="form">
+    
+    
+    
+
+ <form method="post" name="myform">
+      <input type="password" id="passw" size="8" />
+
+<input type="submit" value="verify" onclick="verify(); return false;" />
+</form>
+      
+    </form>
+  </div>
+  <h3></h3>
+  <h4>IF PASSWORD IS VERIFIED THEN IT IS THE ANSWER</h4>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+    	
+    	 
